@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+    <h1>Курсова робота</h1>
+    <p>Студент групи ІР-21 Цісінський Олександр</p>
+</div>
+<div class="content">
+    <div class="buttonsForAlgorithm">
+        <button onclick="getDataFromLed(this.id)" id="1" class="buttonLed">1</button>
+        <button onclick="getDataFromLed(this.id)" id="2" class="buttonLed">2</button>
+        <button onclick="getDataFromLed(this.id)" id="3" class="buttonLed">3</button>
+        <button onclick="getDataFromLed(this.id)" id="4" class="buttonLed">4</button>
+        <button onclick="getDataFromLed(this.id)" id="5" class="buttonLed">5</button>
+        <button onclick="getDataFromLed(this.id)" id="6" class="buttonLed">6</button>
+        <button onclick="getDataFromLed(this.id)" id="7" class="buttonLed">7</button>
+        <button onclick="getDataFromLed(this.id)" id="8" class="buttonLed">8</button>
+    </div>
+    <div>
+        <button class="onAll">On all</button>
+        <button class="offAll">Off all</button>
+    </div>
+    <button class="realTime">Monitor in real time</button>
+    <div>
+        <button class="createAlgorithm">Create an algorithm</button>
+        <div>
+            <button disabled class="send">Send</button>
+        </div>
+    </div>
+    <div>
+        <button onclick="getAllAlgorithm()" class="getAlgorithms">Get algorithms</button>
+    </div>
+    <div id="items_container">
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
